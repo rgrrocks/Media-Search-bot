@@ -55,6 +55,13 @@ async def answer(bot, query):
                            switch_pm_text=switch_pm_text,
                            switch_pm_parameter="okay")
 
+
+def get_reply_markup(username):
+    url = 't.me/share/url?url=' + quote(SHARE_BUTTON_TEXT.format(username=username))
+
+    return 
+
+
 def get_size(size):
     """Get size in readable format"""
 
